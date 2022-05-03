@@ -26,8 +26,5 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ],
-  "files.associations": {
-    "Exercicio-1.C": "cpp"
-  }
+  ]
 }
