@@ -1,50 +1,40 @@
-/******************************************************************************
-6)	Escreva um programa que leia as medidas dos lados de um triângulo e escreva se ele é Equilátero, 
-Isósceles ou Escaleno. Sendo que: 
-−Triângulo Equilátero: possui os 3 lados iguais. −Triângulo Isóscele: possui 2 lados iguais. 
-−Triângulo Escaleno: possui 3 lados diferentes
-
-
-*******************************************************************************/
-
 #include <stdio.h>
 
+ 
 int main()
 {
-float lado1, lado2, lado3;
-
-printf("\n informe o lado 1");
-scanf('%f', &lado1);
-
-printf("\n informe o lado 2");
-scanf('%f', &lado2);
-
-printf("\n informe o lado 3");
-scanf('%f', &lado3);
-
-if (lado1<=0 || lado2<=0 || lado3<=0)
-{
-    printf('\n valores invalidos, devem ser maiores que zero');
-}
-else
-{
-    if (lado1 == lado2 && lado2 == lado3)
+    int lado1, lado2, lado3;
+    
+    printf ("\n informe o lado 1 ");
+    scanf ("%d", &lado1);
+    
+    printf ("\nInforme o lado 2 ");
+    scanf ("%d", &lado2);
+    
+    printf ("\nInforme o lado 3 ");
+    scanf ("%d", &lado3);
+    
+    if (lado1 <= 0 || lado2 <=0 || lado3 <= 0)
     {
-        printf('\n O triangulo é equilatero');
+        printf ("\n os valores para os lados devem ser maiores que zero");
     }
     else
     {
-        if (lado1!= lado2 && lado2 != lado3 && lado1 != lado3)
-        {
-            printf('\n o triangulo é escaleno');
+    
+       if (lado1 == lado2 && lado2 ==lado3)
+       {
+           printf ("\n O triangulo é EQUILÁTERO");
+       }
+       else
+       {
+           if (lado1 != lado2 && lado2 != lado3 && lado1 != lado3)
+           {
+               printf ("\n O triangulo é ESCALENO");
+           }
+           else
+           {
+               printf ("\n O triangulo é ISÓSCELES");
+           }
         }
-        else
-        {
-            printf('o triangulo é isosceles');
-        }    
-    }    
-}
-}
-
-
-
+    }
+}    
